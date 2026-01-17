@@ -1,4 +1,5 @@
-.contact-row {
+.row {
+    display: block;
     text-align: center;
 }
 
