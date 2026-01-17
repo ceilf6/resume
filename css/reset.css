@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+address {
+    /* 简历应该简洁、易读，斜体不利于阅读 */
+    font-style: normal;
+}
+
+dt,
+dd {
+    display: inline;
+    margin-inline-start: 0px;
+}
+
+dl dd {
+    margin-right: 5px;
+}
+
+footer {
+    font-size: xx-small;
+}
