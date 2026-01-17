@@ -1,3 +1,34 @@
 .contact-row {
     text-align: center;
 }
+
+.page {
+    /* 标准A4尺寸 */
+    width: 210mm;
+    min-height: 297mm;
+
+    /* 页面内边距 */
+    padding: 20mm;
+
+    /* 页面居中显示 */
+    margin: 0 auto;
+
+    /* 背景色（屏幕预览用） */
+    background: white;
+
+    /* 阴影效果（屏幕预览用） */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 打印样式 */
+@media print {
+    .page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+
+    body {
+        margin: 0;
+    }
+}
