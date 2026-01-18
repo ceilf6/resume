@@ -1,7 +1,3 @@
-h1 {
-    text-align: center;
-}
-
 address {
     /* 简历应该简洁、易读，斜体不利于阅读 */
     font-style: normal;
@@ -19,4 +15,32 @@ dl dd {
 
 footer {
     font-size: xx-small;
+}
+
+body {
+    font-family: "PingFang SC", "Microsoft YaHei", -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+    /* 正文大小 */
+    line-height: 1.6;
+    /* 行高 */
+    color: #333;
+    /* 深灰色文字 */
+}
+
+h1 {
+    font-size: 18pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+a {
+    color: #2563eb;
+    /* 这种链接蓝色更不影响观感 */
+    text-decoration: none;
 }
