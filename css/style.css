@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.important {
+    font-size: larger;
+}
+
 .page {
     /* 标准A4尺寸 */
     width: 210mm;
