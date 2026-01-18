@@ -1,0 +1,38 @@
+/**
+ * SectionHeader 组件样式
+ * 使用 BEM 命名规范
+ */
+
+.section-header {
+  margin-bottom: 16px;
+}
+
+.section-header__title {
+  font-size: 14pt;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.section-header__divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #333 0%,
+    #333 30%,
+    #ddd 100%
+  );
+}
+
+/* 打印样式优化 */
+@media print {
+  .section-header {
+    margin-bottom: 12px;
+  }
+
+  .section-header__divider {
+    background: #333;
+  }
+}
