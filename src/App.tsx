@@ -24,11 +24,13 @@ const App: React.FC = () => {
             <div className="row">
               <dt>电话: </dt>
               <dd>
-                <a href="tel:+8619857907795">19857907795</a>
+                19857907795
+                {/* <a href="tel:+8619857907795">19857907795</a> */}
               </dd>
               <dt>邮箱: </dt>
               <dd>
-                <a href="mailto:3506456886@qq.com">3506456886@qq.com</a>
+                3506456886@qq.com
+                {/* <a href="mailto:3506456886@qq.com">3506456886@qq.com</a> */}
               </dd>
               <dt>求职方向: </dt>
               <dd>大前端开发+AI应用</dd>
