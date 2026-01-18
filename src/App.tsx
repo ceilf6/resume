@@ -7,7 +7,6 @@ const App: React.FC = () => {
       {/* 顶部信息 */}
       <header>
         <h1>王景宏</h1>
-
         <address className="contact">
           <dl>
             {/* Github地址（important） */}
@@ -19,7 +18,6 @@ const App: React.FC = () => {
                 </dd>
               </div>
             </strong>
-
             {/* 基本信息 */}
             <div className="row">
               <dt>电话: </dt>
@@ -39,7 +37,6 @@ const App: React.FC = () => {
               <dt>性别: </dt>
               <dd>男</dd>
             </div>
-
             {/* 博客链接 */}
             <div className="row">
               <dt>Blog: </dt>
@@ -83,6 +80,16 @@ const App: React.FC = () => {
               startMonth={9}
               endYear={2026}
               endMonth={1}
+            />
+          </div>
+          {/* 经历2: 七牛 */}
+          <div>
+            <ItemHeader
+              leftContent='(2) 七牛'
+              startYear={2025}
+              startMonth={6}
+              endYear={2025}
+              endMonth={9}
             />
           </div>
         </section>

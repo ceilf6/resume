@@ -115,7 +115,7 @@ const ItemHeader: React.FC<ItemHeaderProps> = ({
 
   return (
     <div className={`item-header ${className}`.trim()}>
-      <div className="item-header__left">{leftContent}</div>
+      <h3 className="item-header__left">{leftContent}</h3>
       <time className="item-header__right" dateTime={dateTime}>
         {displayText}
       </time>

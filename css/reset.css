@@ -10,7 +10,7 @@ dd {
 }
 
 dl dd {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 footer {
@@ -36,6 +36,11 @@ h1 {
 
 h2 {
     font-size: 12pt;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 11pt;
     font-weight: 600;
 }
 
