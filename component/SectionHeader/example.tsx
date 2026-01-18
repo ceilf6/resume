@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import SectionHeader from './section-header';
+import SectionHeader from './SectionHeader';
 
 const App: React.FC = () => {
   return (

@@ -3,11 +3,11 @@
  * 使用 BEM 命名规范
  */
 
-.section-header {
+.SectionHeader {
   margin-bottom: 16px;
 }
 
-.section-header__title {
+.SectionHeader__title {
   font-size: 14pt;
   font-weight: 600;
   color: #1a1a1a;
@@ -15,7 +15,7 @@
   padding: 0;
 }
 
-.section-header__divider {
+.SectionHeader__divider {
   width: 100%;
   height: 0;
   border-bottom: 2px solid #1E40AF;
@@ -23,11 +23,11 @@
 
 /* 打印样式优化 */
 @media print {
-  .section-header {
+  .SectionHeader {
     margin-bottom: 12px;
   }
 
-  .section-header__divider {
+  .SectionHeader__divider {
     border-bottom: 2px solid #1E40AF;
   }
 }

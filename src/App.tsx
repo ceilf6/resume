@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionHeader from '../component/section-header/section-header'
+import SectionHeader from '../component/SectionHeader/SectionHeader'
 
 const App: React.FC = () => {
   return (

@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import './section-header.css';
+import './SectionHeader.css';
 
 interface SectionHeaderProps {
   /** 区域标题文本 */
@@ -23,9 +23,9 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   className = ''
 }) => {
   return (
-    <div className={`section-header ${className}`.trim()}>
-      <h2 className="section-header__title">{title}</h2>
-      <div className="section-header__divider" aria-hidden="true" />
+    <div className={`SectionHeader ${className}`.trim()}>
+      <h2 className="SectionHeader__title">{title}</h2>
+      <div className="SectionHeader__divider" aria-hidden="true" />
     </div>
   );
 };
