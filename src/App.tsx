@@ -60,7 +60,10 @@ const App: React.FC = () => {
           <SectionHeader title="教育背景" />
           <ItemHeader
             leftContent="上海大学(211) · 信息工程"
-            rightContent="2023 年 7 月 - 2027 年 6 月"
+            startYear={2023}
+            startMonth={7}
+            endYear={2027}
+            endMonth={6}
           />
         </section>
 
@@ -76,7 +79,10 @@ const App: React.FC = () => {
           <div>
             <ItemHeader
               leftContent="(1) 美团"
-              rightContent="2025 年 9 月 - 2026 年 1 月"
+              startYear={2025}
+              startMonth={9}
+              endYear={2026}
+              endMonth={1}
             />
           </div>
         </section>

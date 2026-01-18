@@ -7,10 +7,25 @@ import ItemHeader from './ItemHeader';
 
 const ItemHeaderExample: React.FC = () => {
   return (
-    <ItemHeader
-      leftContent="(1) 美团"
-      rightContent="2025 年 9 月 - 2026 年 1 月"
-    />
+    <div>
+      {/* 教育背景示例 */}
+      <ItemHeader
+        leftContent="上海大学 · 信息工程"
+        startYear={2023}
+        startMonth={7}
+        endYear={2027}
+        endMonth={6}
+      />
+
+      {/* 工作经历示例 */}
+      <ItemHeader
+        leftContent="(1) 美团 · 前端工程师"
+        startYear={2025}
+        startMonth={9}
+        endYear={2026}
+        endMonth={1}
+      />
+    </div>
   );
 };
 
