@@ -4,14 +4,14 @@
  */
 
 .SectionHeader {
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 .SectionHeader__title {
   font-size: 14pt;
   font-weight: 600;
   color: #1a1a1a;
-  margin: 0 0 8px 0;
+  margin: 0 0;
   padding: 0;
 }
 

@@ -44,3 +44,7 @@ a {
     /* 这种链接蓝色更不影响观感 */
     text-decoration: none;
 }
+
+section {
+    margin-bottom: 10px;
+}
