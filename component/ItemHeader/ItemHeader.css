@@ -1,0 +1,58 @@
+/**
+ * ItemHeader 组件样式
+ * 使用 Flexbox 实现左右两端对齐布局
+ */
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.item-header__left {
+  font-size: 11pt;
+  font-weight: 600;
+  color: #1a1a1a;
+  flex-shrink: 0;
+}
+
+.item-header__right {
+  font-size: 10pt;
+  font-weight: 400;
+  color: #666;
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* 响应式处理 - 窄屏幕下换行 */
+@media screen and (max-width: 600px) {
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .item-header__right {
+    font-size: 9pt;
+    color: #888;
+  }
+}
+
+/* 打印样式优化 */
+@media print {
+  .item-header {
+    margin-bottom: 6px;
+    page-break-inside: avoid;
+  }
+
+  .item-header__left {
+    font-size: 10pt;
+  }
+
+  .item-header__right {
+    font-size: 9pt;
+    color: #333;
+  }
+}

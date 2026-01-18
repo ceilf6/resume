@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionHeader from '../component/SectionHeader/SectionHeader'
+import { SectionHeader, ItemHeader } from '../component'
 
 const App: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const App: React.FC = () => {
 
         <address className="contact">
           <dl>
-            {/* Github地址（突出） */}
+            {/* Github地址（important） */}
             <strong className="important">
               <div className="row">
                 <dt>GitHub: </dt>
@@ -58,25 +58,32 @@ const App: React.FC = () => {
         {/* 教育背景 */}
         <section>
           <SectionHeader title="教育背景" />
-          {/* TODO: 添加教育背景内容 */}
+          <ItemHeader
+            leftContent="上海大学(211) · 信息工程"
+            rightContent="2023 年 7 月 - 2027 年 6 月"
+          />
         </section>
 
         {/* 专业技能 */}
         <section>
           <SectionHeader title="专业技能" />
-          {/* TODO: 添加专业技能内容 */}
         </section>
 
         {/* 工作经历 */}
         <section>
           <SectionHeader title="工作经历" />
-          {/* TODO: 添加工作经历内容 */}
+          {/* 经历1: 美团 */}
+          <div>
+            <ItemHeader
+              leftContent="(1) 美团"
+              rightContent="2025 年 9 月 - 2026 年 1 月"
+            />
+          </div>
         </section>
 
         {/* 荣誉获奖 */}
         <section>
           <SectionHeader title="荣誉获奖" />
-          {/* TODO: 添加荣誉获奖内容 */}
         </section>
       </div>
 
