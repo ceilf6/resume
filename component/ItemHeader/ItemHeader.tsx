@@ -8,7 +8,7 @@ import React from 'react';
 import './ItemHeader.css';
 
 interface ItemHeaderProps {
-  /** 左侧信息（如：上海大学 · 信息工程 或 (1) 美团） */
+  /** 左侧信息（如: 上海大学 · 信息工程 或 (1) 美团） */
   leftContent: string;
   /** 开始年份 */
   startYear: number;

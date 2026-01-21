@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionHeader, ItemHeader } from '../component'
+import { SectionHeader, ItemHeader, ProjectItem } from '../component'
 
 const App: React.FC = () => {
   return (
@@ -74,22 +74,39 @@ const App: React.FC = () => {
           <SectionHeader title="工作经历" />
           {/* 经历1: 美团 */}
           <div>
-            <ItemHeader
-              leftContent="(1) 美团"
+            <ProjectItem
+              leftContent='(1) 美团'
               startYear={2025}
               startMonth={9}
               endYear={2026}
               endMonth={1}
+              position='前端开发实习生'
+              projectName='钱管家、基建组件库'
+              techStack='React、Vue2、HTML5、CSS3、JavaScript、TypeScript'
+              description='美团旧版钱管家系统状态管理混乱、框架设计不合理，且面临海外企业的使用需求，急需重构。同时美团财
+务前端正在构建一套更切合业务场景的基建组件库，提高代码复用率和安全性，减轻开发人员的负担'
+              tasks={['从逻辑优化的基础出发，将钱管家原先 Vue2 框架的 PC 和移动端 i 站双端一并重构为 React，双端间通过business 层优化代码的复用率与可拓展性。原先组件模块间耦合度极高，经过重构后完全解藕，并通过胶水层进行拼接，使得代码强健且可拓展。重构后将核心业务模块中 10+页面平均 LCP 从 3.0s 优化至 1.5s（↓50%），显著提升首屏内容可见速度；将页面 CLS 从 0.05 降至 0.01（↓80%），减少布局偏移并提升视觉稳定性；将核心页面 INP 从~100ms 优化至~50ms（↓50%），显著改善交互响应速度。',
+                '迭代使用美团组件库的新组件，进行定制化开发，并和基建组一同优化组件库，例如表单相关通过优化 useForm 提升渲染性能等',
+                '学习KMP分层共享策略、通过monorepo架构统一了系统多端，同时基于SDD规范设计国际化改造方案，接入i18n平台SDK，并通过MCP实现多端硬编码文案的自动化替换，完成钱管家全域、多端语言动态化支持']}
             />
           </div>
           {/* 经历2: 七牛 */}
           <div>
-            <ItemHeader
+            <ProjectItem
               leftContent='(2) 七牛'
               startYear={2025}
               startMonth={6}
               endYear={2025}
               endMonth={9}
+              position='Web架构实习生'
+              projectName='XBuilder'
+              projectLink='https://github.com/ceilf6/Xbuilder'
+              techStack='Vue3、HTML5、CSS3、JavaScript、TypeScript、XGO、Vite、npm、Git、Vercel'
+              description='通过构建XBuilder平台的分享机制，提高平台的传播度，宣传XBuilder游戏编译器和XGO语言'
+              tasks={['负责模块设计与接口设计，实现代码的低耦合与强健',
+                '架构和编写了海报组件，通过组件反向暴露方法实现嵌入截屏、项目信息与渲染DOM节点的统一管理',
+                '架构和编写了截屏分享和录屏分享组件，通过模态框统一管理组件状态，优化了父子组件通信',
+                '串联逻辑，丝滑实现自动暂停、继续、截屏、录屏等，如Record录屏业务实体的从前端到云端、后端']}
             />
           </div>
         </section>
@@ -100,11 +117,16 @@ const App: React.FC = () => {
         </section>
       </div>
 
-      {/* 底部区域 */}
+      {/* 底部区域 - 附带链接 */}
       <footer>
         <address className="row">
           <pre>
-            在线链接:{' '}
+            荣誉链接:{' '}
+            <a href="todo">
+              todo
+            </a>
+            {' '}
+            简历链接:{' '}
             <a href="https://ceilf6.github.io/resume/">
               ceilf6.github.io/resume/
             </a>
