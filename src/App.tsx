@@ -1,5 +1,7 @@
 import React from 'react'
-import { SectionHeader, ItemHeader, ProjectItem } from '@ceilf6/resume-components'
+import { SectionHeader, ItemHeader, ProjectItem } from '../component'
+// 相对路径迭代，否则等检验还需要发包
+// import { SectionHeader, ItemHeader, ProjectItem } from '@ceilf6/resume-components'
 
 const App: React.FC = () => {
   return (
