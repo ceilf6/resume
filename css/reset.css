@@ -14,6 +14,10 @@ dd {
     margin-inline-start: 0px;
 }
 
+.contact dl {
+    margin: 0 0 10px 0;
+}
+
 /* 基础信息行每个元素中间间距 */
 dl dd {
     margin-right: 20px;
