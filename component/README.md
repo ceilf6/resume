@@ -1,33 +1,48 @@
 # Resume Component Library
 
-> 可抽离 ceilf6/resume 的美观、优雅、精炼的简历组件库
+> 可抽离自 `ceilf6/resume` 的美观、优雅、精炼的简历组件库
 
-一个基于 React + TypeScript 构建的简历组件库，提供语义化、可复用的简历组件。
+一个基于 **React + TypeScript** 构建的简历组件库，提供语义化、可复用、适合打印与 PDF 导出的简历组件。
+
+📦 npm：https://www.npmjs.com/package/@ceilf6/resume-components  
+🔖 Latest version: v0.1.7
+
+---
 
 ## 特性
 
 - **语义化 HTML**：使用 `<article>`、`<section>`、`<time>`、`<dl>` 等语义标签
-- **TypeScript 支持**：完整的类型定义，提供良好的开发体验
-- **Markdown 解析**：内置 `withMarkdown` HOC，自动解析 `**粗体**`、`*斜体*`、`` `代码` ``、`[链接](url)` 等语法
-- **打印优化**：针对 PDF 导出优化样式，支持 A4 纸张
-- **BEM 命名**：CSS 采用 BEM 命名规范，避免样式冲突
+- **TypeScript 支持**：完整类型定义，提供良好的开发体验
+- **Markdown 解析**：内置 `withMarkdown` HOC，自动解析常见 Markdown 语法
+- **打印优化**：针对 PDF / A4 打印优化样式
+- **BEM 命名规范**：CSS 使用 BEM 命名，避免样式冲突
+
+---
 
 ## 安装
 
 ```bash
-# 将 component 目录复制到你的项目中
-cp -r component your-project/
+npm install @ceilf6/resume-components
+# 或
+pnpm add @ceilf6/resume-components
+# 或
+yarn add @ceilf6/resume-components
 ```
 
 ## 快速开始
 
 ```tsx
-import { SectionHeader, ItemHeader, ProjectItem } from './component';
+import {
+  SectionHeader,
+  ItemHeader,
+  ProjectItem,
+} from '@ceilf6/resume-components';
 
 function Resume() {
   return (
     <main className="page">
       <SectionHeader title="工作经历" />
+
       <ProjectItem
         leftContent="(1) 美团"
         startYear={2025}
@@ -40,7 +55,7 @@ function Resume() {
         description="负责**核心业务**模块开发"
         tasks={[
           "将 LCP 从 3.0s 优化至 **1.5s（↓50%）**",
-          "重构组件，提升*代码复用率*"
+          "重构组件，提升*代码复用率*",
         ]}
       />
     </main>
