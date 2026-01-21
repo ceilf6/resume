@@ -9,6 +9,7 @@ dd {
     margin-inline-start: 0px;
 }
 
+/* 基础信息行每个元素中间间距 */
 dl dd {
     margin-right: 20px;
 }
@@ -60,4 +61,10 @@ a:hover {
 
 section {
     margin-bottom: 10px;
+}
+
+/* 荣誉获奖附件区域中每个元素 */
+.accessory li {
+    display: inline;
+    margin-right: 0.5em;
 }

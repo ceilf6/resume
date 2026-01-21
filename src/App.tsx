@@ -67,6 +67,11 @@ const App: React.FC = () => {
         {/* 专业技能 */}
         <section>
           <SectionHeader title="专业技能" />
+          {/* 专业技能列表 */}
+          <ul>
+            <li>熟悉 HTML5, CSS3, JavaScript, TypeScript, Python, C++</li>
+            <li>了解 Vue, React 中 UI 和数据的桥接逻辑</li>
+          </ul>
         </section>
 
         {/* 工作经历 */}
@@ -111,8 +116,13 @@ const App: React.FC = () => {
         </section>
 
         {/* 荣誉获奖 */}
-        <section>
+        <section className="accessory">
           <SectionHeader title="荣誉获奖" />
+          {/* 附属信息列表 */}
+          <ul>
+            <li>天梯程序设计赛国家级二等奖</li>
+            <li>睿抗开发者大赛国家级二等奖</li>
+          </ul>
         </section>
       </div>
 
@@ -120,7 +130,7 @@ const App: React.FC = () => {
       <footer>
         <address className="row">
           <pre>
-            荣誉链接:{' '}
+            附件链接:{' '}
             <a href="todo">
               todo
             </a>
