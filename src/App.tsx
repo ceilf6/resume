@@ -155,12 +155,12 @@ const App: React.FC = () => {
           <pre>
             附件链接:{' '}
             <a href="https://resume-awards.vercel.app/">
-              resume-awards.vercel.app/
+              <strong>resume-awards.vercel.app/</strong>
             </a>
             {'  '}
             简历链接:{' '}
             <a href="https://ceilf6.github.io/resume/">
-              ceilf6.github.io/resume/
+              <strong>ceilf6.github.io/resume/</strong>
             </a>
           </pre>
         </address>
