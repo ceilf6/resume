@@ -1,0 +1,185 @@
+/* Resume Components Library Styles */
+
+/* SectionHeader/SectionHeader.css */
+/**
+ * SectionHeader 组件样式
+ * 使用 BEM 命名规范
+ */
+
+.SectionHeader {
+  margin-bottom: 6px;
+}
+
+.SectionHeader__title {
+  font-size: 14pt;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0;
+  padding: 0;
+}
+
+.SectionHeader__divider {
+  width: 100%;
+  height: 0;
+  border-bottom: 2px solid #1E40AF;
+}
+
+/* 打印样式优化 */
+@media print {
+  .SectionHeader {
+    margin-bottom: 12px;
+  }
+
+  .SectionHeader__divider {
+    border-bottom: 2px solid #1E40AF;
+  }
+}
+
+/* ProjectItem/ProjectItem.css */
+/**
+ * ProjectItem 组件样式
+ */
+
+.project-item {
+  margin-bottom: 16px;
+}
+
+/* 详细信息 */
+.project-item__details {
+  margin: 8px 0;
+  font-size: 10pt;
+}
+
+.project-item__row {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.project-item__row dt {
+  color: #666;
+  flex-shrink: 0;
+  margin-right: 0.5em;
+}
+
+.project-item__row dd {
+  color: #1a1a1a;
+}
+
+.project-item__row a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.project-item__row a:hover {
+  text-decoration: underline;
+}
+
+/* 主要工作 */
+.project-item__tasks {
+  margin-top: 8px;
+}
+
+.project-item__tasks-title {
+  font-size: 10pt;
+  font-weight: 400;
+  color: #666;
+  margin: 0 0 4px 0;
+}
+
+.project-item__tasks-list {
+  margin: 0;
+  padding-left: 1.5em;
+  font-size: 10pt;
+  color: #1a1a1a;
+}
+
+.project-item__tasks-list li {
+  margin-bottom: 4px;
+  line-height: 1.6;
+}
+
+/* 打印样式 */
+@media print {
+  .project-item {
+    page-break-inside: avoid;
+    margin-bottom: 12px;
+  }
+
+  .project-item__details {
+    font-size: 9pt;
+  }
+
+  .project-item__tasks-title {
+    font-size: 9pt;
+  }
+
+  .project-item__tasks-list {
+    font-size: 9pt;
+  }
+
+  .project-item__row a {
+    color: #1a1a1a;
+  }
+}
+
+/* ItemHeader/ItemHeader.css */
+/**
+ * ItemHeader 组件样式
+ * 使用 Flexbox 实现左右两端对齐布局
+ */
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.item-header__left {
+  /* 和 reset.css 的 h3 保持统一，同时提高组件的独立性所以再次书写一遍 */
+  font-size: 11pt;
+  font-weight: 600;
+  color: #1a1a1a;
+  flex-shrink: 0;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.item-header__right {
+  font-size: 10pt;
+  font-weight: 400;
+  color: #666;
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* 响应式处理 - 窄屏幕下换行 */
+@media screen and (max-width: 600px) {
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .item-header__right {
+    font-size: 9pt;
+    color: #888;
+  }
+}
+
+/* 打印样式优化 */
+@media print {
+  .item-header {
+    margin-bottom: 6px;
+    page-break-inside: avoid;
+  }
+
+  .item-header__left {
+    font-size: 10pt;
+  }
+
+  .item-header__right {
+    font-size: 9pt;
+    color: #333;
+  }
+}
+

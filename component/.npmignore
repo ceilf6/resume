@@ -1,0 +1,16 @@
+# Source files
+*.ts
+*.tsx
+!*.d.ts
+
+# Config files
+tsconfig.json
+tsup.config.ts
+
+# Example files
+**/example.tsx
+**/example.ts
+
+# Development
+node_modules/
+.gitignore

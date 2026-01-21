@@ -1,0 +1,133 @@
+# 发布组件库到 npm 和 GitHub Packages
+name: Publish Component Library
+
+on:
+  push:
+    tags:
+      - 'component-v*'  # 当推送 component-v* 标签时触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        working-directory: ./component
+        run: npm install
+
+      - name: Build
+        working-directory: ./component
+        run: npm run build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: component/dist
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: component/dist
+
+      - name: Publish to npm
+        working-directory: ./component
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@ceilf6'
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: component/dist
+
+      - name: Publish to GitHub Packages
+        working-directory: ./component
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  create-release:
+    needs: [publish-npm, publish-gpr]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: component/dist
+
+      - name: Get version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/component-v}" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Component Library v${{ steps.get_version.outputs.VERSION }}
+          body: |
+            ## 简历组件库 v${{ steps.get_version.outputs.VERSION }}
+
+            ### 安装
+
+            **npm:**
+            ```bash
+            npm install @ceilf6/resume-components
+            ```
+
+            **GitHub Packages:**
+            ```bash
+            npm install @ceilf6/resume-components --registry=https://npm.pkg.github.com
+            ```
+
+            ### 使用
+
+            ```tsx
+            import { SectionHeader, ProjectItem } from '@ceilf6/resume-components';
+            import '@ceilf6/resume-components/styles';
+            ```
+          draft: false
+          prerelease: false
+          files: |
+            component/dist/*
