@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionHeader, ItemHeader, ProjectItem } from '../component'
+import { SectionHeader, ItemHeader, ProjectItem } from '@ceilf6/resume-components'
 
 const App: React.FC = () => {
   return (
