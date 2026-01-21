@@ -53,7 +53,7 @@ const App: React.FC = () => {
       {/* 中部内容区域 */}
       <div>
         {/* 教育背景 */}
-        <section>
+        <section className='education'>
           <SectionHeader title="教育背景" />
           <ItemHeader
             leftContent="上海大学(211) · 信息工程"
@@ -65,7 +65,7 @@ const App: React.FC = () => {
         </section>
 
         {/* 专业技能 */}
-        <section>
+        <section className='skills'>
           <SectionHeader title="专业技能" />
           {/* 专业技能列表 */}
           <ul>
@@ -75,7 +75,7 @@ const App: React.FC = () => {
         </section>
 
         {/* 工作经历 */}
-        <section>
+        <section className='experience'>
           <SectionHeader title="工作经历" />
           {/* 经历1: 美团 */}
           <div>
@@ -120,8 +120,22 @@ const App: React.FC = () => {
           <SectionHeader title="荣誉获奖" />
           {/* 附属信息列表 */}
           <ul>
-            <li>天梯程序设计赛国家级二等奖</li>
-            <li>睿抗开发者大赛国家级二等奖</li>
+            <li>天梯程序设计赛<strong>国家级二等奖</strong></li>
+            <li>睿抗开发者大赛<strong>国家级二等奖</strong></li>
+            <li>字节工程训练营证书</li>
+            <li>腾讯优秀开源证书</li>
+            <li>腾讯大前端工程营证书</li>
+            <li>Datawhale优秀Agent开发者</li>
+            <li>百度之星<strong>金奖</strong></li>
+            <li>码蹄杯程序设计大赛<strong>金奖</strong></li>
+            <li>美国数学建模大赛H奖</li>
+            <li>CSP证书</li>
+            <li>从0到1<strong>国家级项目</strong>负责人</li>
+            <li>上海大学<strong>优秀学生</strong></li>
+            <li>上海大学<strong>科创奖学金</strong></li>
+            <li>学院四佳学生</li>
+            <li>最受欢迎学习委员</li>
+            <li>英语、法语都支持工作交流</li>
           </ul>
         </section>
       </div>
