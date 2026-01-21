@@ -1,5 +1,10 @@
 import React from 'react'
-import { SectionHeader, ItemHeader, ProjectItem } from '../component'
+
+import SectionHeader from '../component/SectionHeader'
+import ItemHeader from '../component/ItemHeader'
+import ProjectItem from '../component/ProjectItem'
+// 直接从 ../component 导入的还是打包文件
+// import { SectionHeader, ItemHeader, ProjectItem } from '../component'
 // 相对路径迭代，否则等检验还需要发包
 // import { SectionHeader, ItemHeader, ProjectItem } from '@ceilf6/resume-components'
 
