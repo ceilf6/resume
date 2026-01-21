@@ -42,6 +42,8 @@ h1 {
     font-size: 18pt;
     font-weight: 600;
     text-align: center;
+    margin-top: 0;
+    /* 名字上方空隙过大 */
 }
 
 h2 {
