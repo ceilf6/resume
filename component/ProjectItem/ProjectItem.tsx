@@ -6,6 +6,7 @@
 
 import React from 'react';
 import ItemHeader from '../ItemHeader/ItemHeader';
+import { withMarkdown } from '../utils';
 import './ProjectItem.css';
 
 /*
@@ -79,8 +80,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   tasks,
   className = ''
 }) => {
-  // const { parse } = useMarkdown();
-
   return (
     <article className={`project-item ${className}`.trim()}>
       {/* 头部: 公司/项目名称 + 时间 */}
@@ -142,4 +141,4 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   );
 };
 
-export default ProjectItem;
+export default withMarkdown(ProjectItem);

@@ -97,7 +97,7 @@ const App: React.FC = () => {
               startMonth={6}
               endYear={2025}
               endMonth={9}
-              position='Web架构实习生'
+              position='**Web架构实习生**'
               projectName='XBuilder'
               projectLink='https://github.com/ceilf6/Xbuilder'
               techStack='Vue3、HTML5、CSS3、JavaScript、TypeScript、XGO、Vite、npm、Git、Vercel'
