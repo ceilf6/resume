@@ -20,6 +20,7 @@
 .project-item__row dt {
   color: #666;
   flex-shrink: 0;
+  margin-right: 0.5em;
 }
 
 .project-item__row dd {

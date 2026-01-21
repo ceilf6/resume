@@ -12,7 +12,7 @@ const App: React.FC = () => {
             {/* Github地址（important） */}
             <strong className="important">
               <div className="row">
-                <dt>GitHub: </dt>
+                <dt>GitHub:</dt>
                 <dd>
                   <a href="https://github.com/ceilf6">github.com/ceilf6</a>
                 </dd>
@@ -20,26 +20,26 @@ const App: React.FC = () => {
             </strong>
             {/* 基本信息 */}
             <div className="row">
-              <dt>电话: </dt>
+              <dt>电话:</dt>
               <dd>
                 19857907795
                 {/* <a href="tel:+8619857907795">19857907795</a> */}
               </dd>
-              <dt>邮箱: </dt>
+              <dt>邮箱:</dt>
               <dd>
                 3506456886@qq.com
                 {/* <a href="mailto:3506456886@qq.com">3506456886@qq.com</a> */}
               </dd>
-              <dt>求职方向: </dt>
+              <dt>求职方向:</dt>
               <dd>大前端开发+AI应用</dd>
-              <dt>年龄: </dt>
+              <dt>年龄:</dt>
               <dd>21</dd>
-              <dt>性别: </dt>
+              <dt>性别:</dt>
               <dd>男</dd>
             </div>
             {/* 博客链接 */}
             <div className="row">
-              <dt>Blog: </dt>
+              <dt>Blog:</dt>
               <dd>
                 <a href="https://blog.csdn.net/2301_78856868">
                   blog.csdn.net/2301_78856868
