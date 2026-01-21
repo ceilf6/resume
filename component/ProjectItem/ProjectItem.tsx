@@ -100,7 +100,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         {/* 岗位名称 */}
         <div className="project-item__row">
           <dt>岗位: </dt>
-          <dd>{position}</dd>
+          <dd>{parse(position)}</dd>
         </div>
 
         {/* 工作项目 */}
@@ -109,10 +109,10 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           <dd>
             {projectLink ? (
               <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                {projectName}
+                {parse(projectName)}
               </a>
             ) : (
-              projectName
+              parse(projectName)
             )}
           </dd>
         </div>
