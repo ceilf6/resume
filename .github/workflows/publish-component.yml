@@ -35,6 +35,9 @@ jobs:
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write  # 需要用于 npm provenance
     steps:
       - uses: actions/checkout@v4
 
@@ -52,7 +55,7 @@ jobs:
 
       - name: Publish to npm
         working-directory: ./component
-        run: npm publish --access public --ignore-scripts
+        run: npm publish --access public --ignore-scripts --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
