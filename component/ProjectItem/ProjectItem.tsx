@@ -79,7 +79,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   tasks,
   className = ''
 }) => {
-  const { parse } = useMarkdown();
+  // const { parse } = useMarkdown();
 
   return (
     <article className={`project-item ${className}`.trim()}>
@@ -99,7 +99,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         {/* 岗位名称 */}
         <div className="project-item__row">
           <dt>岗位: </dt>
-          <dd>{parse(position)}</dd>
+          <dd>{position}</dd>
         </div>
 
         {/* 工作项目 */}
@@ -108,10 +108,10 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           <dd>
             {projectLink ? (
               <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                {parse(projectName)}
+                {projectName}
               </a>
             ) : (
-              parse(projectName)
+              projectName
             )}
           </dd>
         </div>
