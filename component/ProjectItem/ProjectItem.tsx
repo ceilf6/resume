@@ -6,7 +6,6 @@
 
 import React from 'react';
 import ItemHeader from '../ItemHeader/ItemHeader';
-import { useMarkdown } from '../MarkdownContext';
 import './ProjectItem.css';
 
 /*
@@ -126,7 +125,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         {/* 项目描述 */}
         <div className="project-item__row">
           <dt>项目描述: </dt>
-          <dd>{parse(description)}</dd>
+          <dd>{description}</dd>
         </div>
       </dl>
 
@@ -135,7 +134,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         <h4 className="project-item__tasks-title">主要工作: </h4>
         <ol className="project-item__tasks-list">
           {tasks.map((task, index) => (
-            <li key={index}>{parse(task)}</li>
+            <li key={index}>{task}</li>
           ))}
         </ol>
       </section>
