@@ -36,6 +36,31 @@ __export(index_exports, {
 });
 module.exports = __toCommonJS(index_exports);
 
+// #style-inject:#style-inject
+function styleInject(css, { insertAt } = {}) {
+  if (!css || typeof document === "undefined") return;
+  const head = document.head || document.getElementsByTagName("head")[0];
+  const style = document.createElement("style");
+  style.type = "text/css";
+  if (insertAt === "top") {
+    if (head.firstChild) {
+      head.insertBefore(style, head.firstChild);
+    } else {
+      head.appendChild(style);
+    }
+  } else {
+    head.appendChild(style);
+  }
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+// ItemHeader/ItemHeader.css
+styleInject(".item-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.item-header__left {\n  font-size: 11pt;\n  font-weight: 600;\n  color: #1a1a1a;\n  flex-shrink: 0;\n  margin-top: 2px;\n  margin-bottom: 0;\n}\n.item-header__right {\n  font-size: 10pt;\n  font-weight: 400;\n  color: #666;\n  white-space: nowrap;\n  text-align: right;\n}\n@media screen and (max-width: 600px) {\n  .item-header {\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 4px;\n  }\n  .item-header__right {\n    font-size: 9pt;\n    color: #888;\n  }\n}\n@media print {\n  .item-header {\n    margin-bottom: 6px;\n    page-break-inside: avoid;\n  }\n  .item-header__left {\n    font-size: 10pt;\n  }\n  .item-header__right {\n    font-size: 9pt;\n    color: #333;\n  }\n}\n");
+
 // ItemHeader/ItemHeader.tsx
 var import_jsx_runtime = require("react/jsx-runtime");
 var ItemHeader = ({
@@ -90,6 +115,9 @@ var ItemHeader = ({
   ] });
 };
 var ItemHeader_default = ItemHeader;
+
+// SectionHeader/SectionHeader.css
+styleInject(".SectionHeader {\n  margin-bottom: 6px;\n}\n.SectionHeader__title {\n  font-size: 14pt;\n  font-weight: 600;\n  color: #1a1a1a;\n  margin: 0 0;\n  padding: 0;\n}\n.SectionHeader__divider {\n  width: 100%;\n  height: 0;\n  border-bottom: 2px solid #1E40AF;\n}\n@media print {\n  .SectionHeader {\n    margin-bottom: 12px;\n  }\n  .SectionHeader__divider {\n    border-bottom: 2px solid #1E40AF;\n  }\n}\n");
 
 // SectionHeader/SectionHeader.tsx
 var import_jsx_runtime2 = require("react/jsx-runtime");
@@ -219,6 +247,9 @@ function withMarkdown(Component, options = {}) {
   WrappedComponent.displayName = `withMarkdown(${Component.displayName || Component.name || "Component"})`;
   return WrappedComponent;
 }
+
+// ProjectItem/ProjectItem.css
+styleInject(".project-item {\n  margin-bottom: 16px;\n}\n.project-item__details {\n  margin: 8px 0;\n  font-size: 10pt;\n}\n.project-item__row {\n  display: flex;\n  margin-bottom: 4px;\n}\n.project-item__row dt {\n  color: #666;\n  flex-shrink: 0;\n  margin-right: 0.5em;\n}\n.project-item__row dd {\n  color: #1a1a1a;\n}\n.project-item__row a {\n  color: #2563eb;\n  text-decoration: none;\n}\n.project-item__row a:hover {\n  text-decoration: underline;\n}\n.project-item__tasks {\n  margin-top: 8px;\n}\n.project-item__tasks-title {\n  font-size: 10pt;\n  font-weight: 400;\n  color: #666;\n  margin: 0 0 4px 0;\n}\n.project-item__tasks-list {\n  margin: 0;\n  padding-left: 1.5em;\n  font-size: 10pt;\n  color: #1a1a1a;\n}\n.project-item__tasks-list li {\n  margin-bottom: 4px;\n  line-height: 1.6;\n}\n@media print {\n  .project-item {\n    page-break-inside: avoid;\n    margin-bottom: 12px;\n  }\n  .project-item__details {\n    font-size: 9pt;\n  }\n  .project-item__tasks-title {\n    font-size: 9pt;\n  }\n  .project-item__tasks-list {\n    font-size: 9pt;\n  }\n  .project-item__row a {\n    color: #1a1a1a;\n  }\n}\n");
 
 // ProjectItem/ProjectItem.tsx
 var import_jsx_runtime5 = require("react/jsx-runtime");
