@@ -6,7 +6,7 @@
 
 import React from 'react';
 import ItemHeader from '../ItemHeader/ItemHeader';
-import { parseMarkdown } from '../utils';
+import { useMarkdown } from '../MarkdownContext';
 import './ProjectItem.css';
 
 /*
@@ -80,6 +80,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   tasks,
   className = ''
 }) => {
+  const { parse } = useMarkdown();
+
   return (
     <article className={`project-item ${className}`.trim()}>
       {/* 头部: 公司/项目名称 + 时间 */}
@@ -124,7 +126,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         {/* 项目描述 */}
         <div className="project-item__row">
           <dt>项目描述: </dt>
-          <dd>{parseMarkdown(description)}</dd>
+          <dd>{parse(description)}</dd>
         </div>
       </dl>
 
@@ -133,7 +135,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         <h4 className="project-item__tasks-title">主要工作: </h4>
         <ol className="project-item__tasks-list">
           {tasks.map((task, index) => (
-            <li key={index}>{parseMarkdown(task)}</li>
+            <li key={index}>{parse(task)}</li>
           ))}
         </ol>
       </section>
