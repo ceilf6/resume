@@ -82,4 +82,9 @@
   .project-item__row a {
     color: #1a1a1a;
   }
+
+  .project-item__row a {
+    color: #2563eb;
+    text-decoration: none;
+  }
 }
