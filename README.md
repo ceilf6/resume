@@ -9,7 +9,7 @@
 一个基于 **React + TypeScript** 构建的简历组件库，提供语义化、可复用、适合打印与 PDF 导出的简历组件。
 
 📦 npm：https://www.npmjs.com/package/@ceilf6/resume-components  
-🔖 Latest version: v0.1.10
+🔖 Latest version: v0.1.12
 
 ---
 

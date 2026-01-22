@@ -7,7 +7,7 @@
 A resume component library built with **React + TypeScript**, providing semantic, reusable components optimized for print and PDF export.
 
 📦 npm: https://www.npmjs.com/package/@ceilf6/resume-components
-🔖 Latest version: v0.1.10
+🔖 Latest version: v0.1.12
 
 ---
 
