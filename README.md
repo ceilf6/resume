@@ -2,6 +2,8 @@
 
 # Resume Component Library
 
+[English README](./component/README-EN.md)
+
 > 可抽离自 `ceilf6/resume` 的美观、优雅、精炼的简历组件库
 
 一个基于 **React + TypeScript** 构建的简历组件库，提供语义化、可复用、适合打印与 PDF 导出的简历组件。
