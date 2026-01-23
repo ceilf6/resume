@@ -21,7 +21,7 @@ const App: React.FC = () => {
               <div className="row">
                 <dt>GitHub:</dt>
                 <dd>
-                  <a href="https://github.com/ceilf6">github.com/ceilf6</a>
+                  <a href="https://github.com/ceilf6" target="_blank">github.com/ceilf6</a>
                 </dd>
               </div>
             </strong>
@@ -49,7 +49,7 @@ const App: React.FC = () => {
               <div className="row">
                 <dt>Blog:</dt>
                 <dd>
-                  <a href="https://blog.csdn.net/2301_78856868">
+                  <a href="https://blog.csdn.net/2301_78856868" target="_blank">
                     blog.csdn.net/2301_78856868
                   </a>
                 </dd>
@@ -153,12 +153,12 @@ const App: React.FC = () => {
         <address className="row">
           <pre>
             附件链接:{' '}
-            <a href="https://resume-awards.vercel.app/">
+            <a href="https://resume-awards.vercel.app/" target="_blank">
               <strong>resume-awards.vercel.app/</strong>
             </a>
             {'  '}
             简历链接:{' '}
-            <a href="https://ceilf6.github.io/resume/">
+            <a href="https://ceilf6.github.io/resume/" target="_blank">
               <strong>ceilf6.github.io/resume/</strong>
             </a>
           </pre>
