@@ -1,4 +1,4 @@
-> src目录下面是本人的个人简历，与组件库无关；component下面才是简历组件库源码
+> component目录下是简历组件库源码
 
 # Resume Component Library
 

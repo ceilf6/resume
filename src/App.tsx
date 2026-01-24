@@ -79,7 +79,7 @@ const App: React.FC = () => {
           {/* 专业技能列表 */}
           <ul>
             <li>熟悉 HTML5, CSS3, JavaScript, TypeScript, Python, C++</li>
-            <li>了解 Vue, React 中 UI 和数据的桥接逻辑</li>
+            <li>熟悉 Vue, React 中响应式设计以及虚拟 DOM 性能优化细节</li>
           </ul>
         </section>
 
@@ -156,11 +156,6 @@ const App: React.FC = () => {
             <a href="https://ceilf6.github.io/ceilf6/" target="_blank">
               <strong>ceilf6.github.io/ceilf6/</strong>
             </a>
-            {/* {'  '}
-            简历链接:{' '}
-            <a href="https://ceilf6.github.io/resume/" target="_blank">
-              <strong>ceilf6.github.io/resume/</strong>
-            </a> */}
           </pre>
         </address>
       </footer>
