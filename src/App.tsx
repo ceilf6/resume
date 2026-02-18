@@ -97,7 +97,8 @@ const App: React.FC = () => {
               startMonth={9}
               endYear={2026}
               endMonth={1}
-              position="**前端开发实习生**"
+              midContent="前端开发(实习)"
+              // position="**前端开发实习生**"
               projectName="**钱管家、基建组件库**"
               techStack="**React、Vue2、HTML5、CSS3、JavaScript、TypeScript**"
               description="美团旧版钱管家系统状态管理混乱、框架设计不合理，且面临海外企业的使用需求，急需重构。同时美团财务前端正在构建一套更切合业务场景的基建组件库，提高代码复用率和安全性，减轻开发人员的负担"
@@ -116,7 +117,8 @@ const App: React.FC = () => {
               startMonth={6}
               endYear={2025}
               endMonth={9}
-              position="**Web架构实习生**"
+              midContent="前端开发(实习)"
+              // position="**Web架构实习生**"
               projectName="**XBuilder**"
               projectLink="https://github.com/ceilf6/Xbuilder"
               techStack="**Vue3、HTML5、CSS3、JavaScript、TypeScript、XGO、Vite、npm、Git、Vercel**"

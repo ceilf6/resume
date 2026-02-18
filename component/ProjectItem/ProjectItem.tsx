@@ -4,10 +4,10 @@
  * 基于 ItemHeader 封装，增加岗位、项目、技术栈、描述、主要工作等信息
  */
 
-import React from 'react';
-import ItemHeader from '../ItemHeader/ItemHeader';
-import { withMarkdown } from '../utils';
-import './ProjectItem.css';
+import React from "react";
+import ItemHeader from "../ItemHeader/ItemHeader";
+import { withMarkdown } from "../utils";
+import "./ProjectItem.css";
 
 /*
 考虑到一个标准项目对外展示的信息，强制必填
@@ -15,6 +15,8 @@ import './ProjectItem.css';
 interface ProjectItemProps {
   /** 左侧信息（如: (1) 美团） */
   leftContent: string;
+  /** 中间信息 */
+  midContent?: string;
   /** 开始年份 */
   startYear: number;
   /** 开始月份 (1-12) */
@@ -28,7 +30,7 @@ interface ProjectItemProps {
   /** 结束日期 */
   endDate?: number;
   /** 岗位名称 */
-  position: string;
+  position?: string;
   /** 工作项目名称 */
   projectName: string;
   /** 工作项目链接（可选，有则用 a 标签） */
@@ -66,6 +68,7 @@ interface ProjectItemProps {
  */
 const ProjectItem: React.FC<ProjectItemProps> = ({
   leftContent,
+  midContent,
   startYear,
   startMonth,
   startDate,
@@ -78,13 +81,14 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   techStack,
   description,
   tasks,
-  className = ''
+  className = "",
 }) => {
   return (
     <article className={`project-item ${className}`.trim()}>
       {/* 头部: 公司/项目名称 + 时间 */}
       <ItemHeader
         leftContent={leftContent}
+        midContent={midContent}
         startYear={startYear}
         startMonth={startMonth}
         startDate={startDate}
@@ -96,11 +100,12 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       {/* 详细信息 */}
       <dl className="project-item__details">
         {/* 岗位名称 */}
-        <div className="project-item__row">
-          <dt>岗位: </dt>
-          <dd>{position}</dd>
-        </div>
-
+        {position ? (
+          <div className="project-item__row">
+            <dt>岗位: </dt>
+            <dd>{position}</dd>
+          </div>
+        ) : null}
         {/* 工作项目 */}
         <div className="project-item__row">
           <dt>工作项目: </dt>
@@ -114,13 +119,11 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             )}
           </dd>
         </div>
-
         {/* 技术栈 */}
         <div className="project-item__row">
           <dt>技术栈: </dt>
           <dd>{techStack}</dd>
         </div>
-
         {/* 项目描述 */}
         <div className="project-item__row">
           <dt>项目描述: </dt>
