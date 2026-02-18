@@ -4,12 +4,14 @@
  * 左侧显示名称信息，右侧显示时间信息
  */
 
-import React from 'react';
-import './ItemHeader.css';
+import React from "react";
+import "./ItemHeader.css";
 
 interface ItemHeaderProps {
-  /** 左侧信息（如: 上海大学 · 信息工程 或 (1) 美团） */
+  /** 左侧信息（如: 上海大学(211) 或 (1) 美团） */
   leftContent: string;
+  /** 居中信息（如: 信息工程、软件工程师） */
+  midContent?: string;
   /** 开始年份 */
   startYear: number;
   /** 开始月份 (1-12) */
@@ -58,13 +60,14 @@ interface ItemHeaderProps {
  */
 const ItemHeader: React.FC<ItemHeaderProps> = ({
   leftContent,
+  midContent,
   startYear,
   startMonth,
   startDate,
   endYear,
   endMonth,
   endDate,
-  className = ''
+  className = "",
 }) => {
   // 生成 ISO 8601 格式的 dateTime
   const formatDateTime = () => {
@@ -72,16 +75,16 @@ const ItemHeader: React.FC<ItemHeaderProps> = ({
     let end = `${endYear}`;
 
     if (startMonth !== undefined) {
-      start += `-${String(startMonth).padStart(2, '0')}`;
+      start += `-${String(startMonth).padStart(2, "0")}`;
       if (startDate !== undefined) {
-        start += `-${String(startDate).padStart(2, '0')}`;
+        start += `-${String(startDate).padStart(2, "0")}`;
       }
     }
 
     if (endMonth !== undefined) {
-      end += `-${String(endMonth).padStart(2, '0')}`;
+      end += `-${String(endMonth).padStart(2, "0")}`;
       if (endDate !== undefined) {
-        end += `-${String(endDate).padStart(2, '0')}`;
+        end += `-${String(endDate).padStart(2, "0")}`;
       }
     }
 
@@ -116,6 +119,7 @@ const ItemHeader: React.FC<ItemHeaderProps> = ({
   return (
     <div className={`item-header ${className}`.trim()}>
       <h3 className="item-header__left">{leftContent}</h3>
+      {midContent && <span className="item-header__mid">{midContent}</span>}
       <time className="item-header__right" dateTime={dateTime}>
         {displayText}
       </time>
