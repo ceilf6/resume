@@ -8,6 +8,8 @@ import ProjectItem from "../component/ProjectItem";
 // 相对路径迭代，否则等检验还需要发包
 // import { SectionHeader, ItemHeader, ProjectItem } from '@ceilf6/resume-components'
 
+import { calcAge } from "../utils";
+
 const App: React.FC = () => {
   return (
     <main className="page">
@@ -42,7 +44,7 @@ const App: React.FC = () => {
               <dt>求职方向:</dt>
               <dd>大前端开发+AI应用</dd>
               <dt>年龄:</dt>
-              <dd>21</dd>
+              <dd>{calcAge(2005, 5, 13)}</dd>
               <dt>性别:</dt>
               <dd>男</dd>
             </div>
