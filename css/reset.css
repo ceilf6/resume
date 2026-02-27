@@ -1,94 +1,102 @@
+@import "tailwindcss";
+
 address {
-    /* 简历应该简洁、易读，斜体不利于阅读 */
-    font-style: normal;
+  /* 简历应该简洁、易读，斜体不利于阅读 */
+  font-style: normal;
 }
 
 .accessory ul {
-    padding-left: 0;
-    margin: 0;
+  padding-left: 0;
+  margin: 0;
 }
 
 dt,
 dd {
-    display: inline;
-    margin-inline-start: 0px;
+  display: inline;
+  margin-inline-start: 0px;
 }
 
 .contact dl {
-    margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
 /* 基础信息行每个元素中间间距 */
 dl dd {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 dt {
-    margin-right: 0.5em;
+  margin-right: 0.5em;
 }
 
 footer {
-    font-size: xx-small;
+  font-size: xx-small;
 }
 
 body {
-    font-family: "PingFang SC", "Microsoft YaHei", -apple-system,
-        BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    font-size: 11pt;
-    /* 正文大小 */
-    line-height: 1.6;
-    /* 行高 */
-    color: #333;
-    /* 深灰色文字 */
+  font-family:
+    "PingFang SC",
+    "Microsoft YaHei",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+  font-size: 11pt;
+  /* 正文大小 */
+  line-height: 1.6;
+  /* 行高 */
+  color: #333;
+  /* 深灰色文字 */
 }
 
 h1 {
-    font-size: 18pt;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    /* 名字上下空隙过大 */
+  font-size: 18pt;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* 名字上下空隙过大 */
 }
 
 h2 {
-    font-size: 13pt;
-    font-weight: 600;
+  font-size: 13pt;
+  font-weight: 600;
 }
 
 h3 {
-    font-size: 12pt;
-    font-weight: 600;
+  font-size: 12pt;
+  font-weight: 600;
 }
 
 a {
-    color: #2563eb;
-    /* 这种链接蓝色更不影响观感 */
-    text-decoration: none;
+  color: #2563eb;
+  /* 这种链接蓝色更不影响观感 */
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 section {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .accessory ul {
-    text-align: center;
+  text-align: center;
 }
 
 /* 荣誉获奖附件区域中每个元素 */
 .accessory li {
-    display: inline-block;
-    list-style: none;
-    margin-right: 20px;
-    margin-bottom: 4px;
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+  margin-bottom: 4px;
 }
 
 .accessory li::before {
-    content: "• ";
-    color: #333;
-    margin-right: 0.3em;
+  content: "• ";
+  color: #333;
+  margin-right: 0.3em;
 }

@@ -1,44 +1,44 @@
 .row {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
-.important {
-    font-size: larger;
+.larger {
+  font-size: larger;
 }
 
 .page {
-    /* 标准A4尺寸 */
-    width: 210mm;
-    min-height: 297mm;
+  /* 标准A4尺寸 */
+  width: 210mm;
+  min-height: 297mm;
 
-    /* 页面内边距 */
-    /* padding: 16mm 16mm 0 16mm; */
-    padding: 20mm;
+  /* 页面内边距 */
+  /* padding: 16mm 16mm 0 16mm; */
+  padding: 20mm;
 
-    /* 页面居中显示 */
-    margin: 0 auto;
+  /* 页面居中显示 */
+  margin: 0 auto;
 
-    /* 背景色（屏幕预览用） */
-    background: white;
+  /* 背景色（屏幕预览用） */
+  background: white;
 
-    /* 阴影效果（屏幕预览用） */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* 阴影效果（屏幕预览用） */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* 打印样式 */
 @media print {
-    .page {
-        /* 注意打印外边距必须是0 */
-        margin: 0;
-        box-shadow: none;
-        page-break-after: always;
+  .page {
+    /* 注意打印外边距必须是0 */
+    margin: 0;
+    box-shadow: none;
+    page-break-after: always;
 
-        /* 页面内边距 */
-        padding: 16mm 16mm 0 16mm;
-    }
+    /* 页面内边距 */
+    padding: 16mm 16mm 0 16mm;
+  }
 
-    body {
-        margin: 0;
-    }
+  body {
+    margin: 0;
+  }
 }

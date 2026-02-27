@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <address className="contact">
           <dl>
             {/* Github地址（important） */}
-            <strong className="important">
+            <strong className="larger">
               <div className="row">
                 <dt>GitHub:</dt>
                 <dd>
@@ -84,7 +84,8 @@ const App: React.FC = () => {
           {/* 专业技能列表 */}
           <ul>
             <li>
-              熟练使用 <strong>HTML5</strong> 进行语义化开发
+              熟练使用 <strong>HTML5</strong> {/* className="text-[1.05em]" */}
+              进行语义化开发
             </li>
             <li>
               熟悉 <strong>CSS</strong> 样式设置,
