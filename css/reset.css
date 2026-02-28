@@ -1,4 +1,5 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
+/* tailwindcss 的 Preflight 会对导致 list-style: none，目前没有使用 tailwindcss 如果要用了再重构 */
 
 address {
   /* 简历应该简洁、易读，斜体不利于阅读 */
