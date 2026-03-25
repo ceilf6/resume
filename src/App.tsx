@@ -90,7 +90,7 @@ const App: React.FC = () => {
               <a href="https://github.com/ceilf6/FrontAgent" target="_blank">
                 <strong>前端智能体</strong>
               </a>{" "}
-              项目
+              等多个开源项目
             </li>
             <li>
               熟练使用 <strong>HTML5</strong> {/* className="text-[1.05em]" */}
