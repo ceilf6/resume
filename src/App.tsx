@@ -118,8 +118,14 @@ const App: React.FC = () => {
               <strong>网络</strong> 知识
             </li>
             <li>
-              此外了解 TypeScript、C++、Python，有嵌入式、<strong>Agent</strong>{" "}
-              开发经验
+              长期使用和学习AI，了解大模型底层
+              <strong>神经网络RNN、Transformer</strong>
+              架构；了解infra基建层的<strong>RAG、Skill、MCP</strong>
+              等；同时长期维护
+              <a href="https://github.com/ceilf6/FrontAgent" target="_blank">
+                <strong>前端智能体</strong>
+              </a>
+              项目
             </li>
           </ul>
         </section>
