@@ -84,6 +84,15 @@ const App: React.FC = () => {
           {/* 专业技能列表 */}
           <ul>
             <li>
+              长期使用和学习AI，了解大模型底层{" "}
+              <strong>神经网络RNN、Transformer</strong> 架构；了解infra基建层的{" "}
+              <strong>RAG、Skill、MCP</strong> 等；同时长期维护{" "}
+              <a href="https://github.com/ceilf6/FrontAgent" target="_blank">
+                <strong>前端智能体</strong>
+              </a>{" "}
+              项目
+            </li>
+            <li>
               熟练使用 <strong>HTML5</strong> {/* className="text-[1.05em]" */}
               进行语义化开发
             </li>
@@ -93,7 +102,7 @@ const App: React.FC = () => {
             </li>
             <li>
               理解原型链、期约异步、作用域链、this 指向、闭包、垃圾回收等{" "}
-              <strong>JS</strong> 核心原理
+              <strong>JS</strong> 核心原理，此外了解 TS、C++、python 语言
             </li>
             <li>
               了解 <strong>浏览器</strong>{" "}
@@ -116,16 +125,6 @@ const App: React.FC = () => {
               了解
               AJAX、跨域、cookie、TCP、各版本HTTP、SSL、HTTPS、CSRF、XSS、DNS、WebSocket等{" "}
               <strong>网络</strong> 知识
-            </li>
-            <li>
-              长期使用和学习AI，了解大模型底层
-              <strong>神经网络RNN、Transformer</strong>
-              架构；了解infra基建层的<strong>RAG、Skill、MCP</strong>
-              等；同时长期维护
-              <a href="https://github.com/ceilf6/FrontAgent" target="_blank">
-                <strong>前端智能体</strong>
-              </a>
-              项目
             </li>
           </ul>
         </section>
