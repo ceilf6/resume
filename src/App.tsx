@@ -158,8 +158,8 @@ const App: React.FC = () => {
               techStack="**React、Vue2、HTML5、CSS3、JavaScript、TypeScript**"
               description="美团旧版钱管家系统状态管理混乱、框架设计不合理，且面临海外企业的使用需求，急需重构。同时美团财务前端正在构建一套更切合业务场景的基建组件库，提高代码复用率和安全性，减轻开发人员的负担"
               tasks={[
-                "通过构建团队知识库、智能体等方式帮助团队进行 AI 提效转型",
-                "进行 Claude Code 源码、Skill、MCP、Claw 等分享提高团队 AI 认知",
+                "通过构建团队知识库、智能体等方式帮助团队进行 **AI 提效转型**",
+                "进行 Claude Code源码、Skill、MCP、Claw 等分享提高团队 AI 认知",
                 "维护和拓展美团APP的到店页面，熟悉包发布、Git Flow 等开发工作流程",
                 // "从逻辑优化的基础出发，
                 "将钱管家从原先 Vue2 框架重构为 React，并通过分层共享策略优化多端之间的代码复用率与可拓展性",
