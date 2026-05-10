@@ -91,12 +91,12 @@ const App: React.FC = () => {
               <a href="https://github.com/ceilf6/FrontAgent" target="_blank">
                 <strong>前端智能体</strong>
               </a>{" "}
-              等多个开源项目和{" "}
+              等多个开源项目以及{" "}
               <a
                 href="https://huggingface.co/ceilf6/frontagent-planner-7B-lora"
                 target="_blank"
               >
-                <strong>蒸馏模型</strong>
+                <strong>Claude 蒸馏了 Qwen 进行 SFT 的 LoRA 模型</strong>
               </a>
             </li>
             <li>
