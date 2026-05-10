@@ -42,7 +42,7 @@ const App: React.FC = () => {
                 {/* <a href="mailto:3506456886@qq.com">3506456886@qq.com</a> */}
               </dd>
               <dt>求职方向:</dt>
-              <dd>大前端开发+AI应用</dd>
+              <dd>AI应用+全栈开发</dd>
               <dt>年龄:</dt>
               <dd>{calcAge(2005, 5, 13)}</dd>
               <dt>性别:</dt>
