@@ -85,7 +85,7 @@ const App: React.FC = () => {
           <ul>
             <li>
               长期使用和学习AI，了解大模型底层{" "}
-              <strong>神经网络RNN、Transformer</strong> 架构；了解 infra 层的{" "}
+              <strong>神经网络RNN、Transformer</strong> 架构；熟悉 infra 层的{" "}
               <strong>RAG、Skill、MCP</strong> 等；同时维护{" "}
               <a href="https://github.com/ceilf6/FrontAgent" target="_blank">
                 <strong>前端智能体</strong>
@@ -99,8 +99,8 @@ const App: React.FC = () => {
               </a>
             </li>
             <li>
-              通过不断探寻最佳范式，提高与 AI 合作的效率与质量，例如
-              Harness、SDD、Wiki 等智能体工程化实践
+              通过不断探寻最佳范式，提高与 AI 合作的效率与质量，例如{" "}
+              <strong>Harness、SDD、Wiki</strong> 等智能体工程化实践
             </li>
             <li>
               熟练使用 <strong>HTML5</strong> {/* className="text-[1.05em]" */}
@@ -109,7 +109,8 @@ const App: React.FC = () => {
             </li>
             <li>
               理解原型链、期约异步、作用域链、this 指向、闭包、垃圾回收等{" "}
-              <strong>JS</strong> 核心原理，此外了解 TS、C++、Python 语言
+              <strong>JS</strong> 核心原理，此外熟悉{" "}
+              <strong>TS、C++、Python</strong> 语言
             </li>
             <li>
               熟悉 <strong>浏览器</strong>{" "}
@@ -121,18 +122,17 @@ const App: React.FC = () => {
               <strong>网络</strong> 知识
             </li>
             <li>
-              了解模块化、包管理器、Less、打包优化等 <strong>工程化</strong>{" "}
-              开发
-            </li>
-            <li>
-              了解 <strong>Vue2</strong>{" "}
-              的模版、组件对象配置、通信、实例属性、路由插件，
-              <strong>Vue3</strong> 的组合式API、响应化实现原理、Vuex
-            </li>
-            <li>
-              了解 <strong>React</strong>{" "}
+              熟悉 <strong>React</strong>{" "}
               的JSX、组件状态、HOC、Ref转发、上下文等基本概念，及其整体架构和渲染流程。有{" "}
               <strong>RN</strong> 开发经验
+            </li>
+            <li>
+              熟悉 <strong>Vue</strong>{" "}
+              的模版、组件对象配置、通信、实例属性、路由插件、组合式API、响应化实现原理、Vuex
+            </li>
+            <li>
+              熟悉模块化、包管理器、Less、打包优化等 <strong>工程化</strong>{" "}
+              开发
             </li>
           </ul>
         </section>
@@ -147,13 +147,14 @@ const App: React.FC = () => {
               startYear={2025}
               startMonth={9}
               endYear={2026}
-              endMonth={1}
+              endMonth={5}
               midContent="软件开发(实习)"
               // position="**前端开发实习生**"
-              projectName="**钱管家、基建组件库**"
+              projectName="**美团APP到店页面、钱管家、基建组件库**"
               techStack="**React、Vue2、HTML5、CSS3、JavaScript、TypeScript**"
               description="美团旧版钱管家系统状态管理混乱、框架设计不合理，且面临海外企业的使用需求，急需重构。同时美团财务前端正在构建一套更切合业务场景的基建组件库，提高代码复用率和安全性，减轻开发人员的负担"
               tasks={[
+                "帮助团队进行 AI 提效转型，通过进行 Claude Code 源码等分享提高团队 AI 认知",
                 "从逻辑优化的基础出发，将钱管家原先 Vue2 框架的 PC 和移动端 i 站**双端**一并重构为 React，双端间通过 business 层作为模版优化代码的复用率与可拓展性。原先组件模块间耦合度极高，经过重构后完全解藕，并通过胶水层进行适配，使得代码强健且可拓展。", // 重构后将核心业务模块中 10+页面平均 LCP 从 3.0s 优化至 1.5s（↓50%），显著提升首屏内容可见速度；将页面 CLS 从 0.05 降至 0.01（↓80%），减少布局偏移并提升视觉稳定性；将核心页面 INP 从~100ms 优化至~50ms（↓50%），显著改善交互响应速度。",
                 // "迭代使用美团组件库的**新组件**，进行定制化开发，并和基建组一同优化组件库，例如表单相关通过优化 useForm 提升渲染性能等",
                 "学习KMP分层共享策略，同时基于SDD规范设计国际化改造方案，接入i18n平台SDK，并通过MCP实现多端硬编码文案的自动化替换，完成钱管家全域、多端语言动态化支持",
@@ -176,10 +177,11 @@ const App: React.FC = () => {
               techStack="**Vue3、HTML5、CSS3、JavaScript、TypeScript、XGO、Vite、npm、Git、Vercel**"
               description="通过构建XBuilder平台的分享机制，提高平台的传播度，宣传XBuilder游戏编译器和XGO语言"
               tasks={[
-                "负责模块设计与接口设计，实现代码的低耦合与强健",
+                // "负责模块设计与接口设计，实现代码的低耦合与强健",
                 "架构和编写了海报组件，实现项目信息与渲染DOM节点的统一管理",
+                "编写录屏组件，打通页面视频从站内文件到第三方的链路",
                 // 通过组件反向暴露方法实现嵌入截屏
-                "架构和编写了截屏分享和录屏分享组件，通过模态框统一管理组件状态，优化了父子组件通信",
+                // "架构和编写了截屏分享和录屏分享组件，通过模态框统一管理组件状态，优化了父子组件通信",
               ]}
             />
           </div>
