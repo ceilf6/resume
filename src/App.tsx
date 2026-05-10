@@ -84,9 +84,10 @@ const App: React.FC = () => {
           {/* 专业技能列表 */}
           <ul>
             <li>
-              长期使用和学习 AI ，了解大模型底层{" "}
-              <strong>神经网络RNN、Transformer</strong> 架构；熟悉 infra 层的{" "}
-              <strong>RAG、Skill、MCP</strong> 等；同时维护{" "}
+              持续关注并实践<strong> AI 应用开发</strong>，了解大模型底层{" "}
+              {/* <strong> */}
+              神经网络RNN、Transformer {/* </strong>  */}
+              架构；熟悉 <strong>RAG、Skill、MCP</strong> 等基建；同时维护{" "}
               <a href="https://github.com/ceilf6/FrontAgent" target="_blank">
                 <strong>前端智能体</strong>
               </a>{" "}
@@ -99,8 +100,9 @@ const App: React.FC = () => {
               </a>
             </li>
             <li>
-              通过不断探寻最佳范式，提高与 AI 合作的效率与质量，例如{" "}
-              <strong>Harness、SDD、Wiki</strong> 等智能体工程化实践
+              通过不断探寻更优的<strong>研发范式</strong>，提高与 AI
+              合作的效率与质量，例如 <strong>Harness、SDD、Wiki</strong>{" "}
+              等智能体工程化实践
             </li>
             <li>
               熟练使用 <strong>HTML5</strong> {/* className="text-[1.05em]" */}
@@ -155,12 +157,11 @@ const App: React.FC = () => {
               midContent="软件开发(实习)"
               // position="**前端开发实习生**"
               projectName="**美团APP到店页面、“钱管家”等多个内部平台、基建组件库**"
-              techStack="**React、Vue2、HTML5、CSS3、JavaScript、TypeScript**"
-              description="美团旧版钱管家系统状态管理混乱、框架设计不合理，且面临海外企业的使用需求，急需重构。同时美团财务前端正在构建一套更切合业务场景的基建组件库，提高代码复用率和安全性，减轻开发人员的负担"
+              techStack="**React、React Native、Vue2、HTML5、CSS3、JavaScript、TypeScript**"
+              description="1. 团队正在全速 AI 化；2. 美团APP到店页面的长期维护和功能拓展；3. 旧版钱管家系统状态管理混乱、框架设计不合理，急需重构；4. 美团内部正在构建一套更切合业务场景的基建组件库"
               tasks={[
-                "通过构建团队知识库、智能体等方式帮助团队进行 **AI 提效转型**",
-                "进行 Claude Code源码、Skill、MCP、Claw 等分享提高团队 AI 认知",
-                "维护和拓展美团APP的到店页面，熟悉包发布、Git Flow 等开发工作流程",
+                "通过构建团队知识库、智能体等方式帮助团队进行 **AI 提效转型**，分享 Claude Code 源码、Skill、MCP、Claw 等内容，提升团队 AI 认知",
+                "维护和拓展美团APP的到店页面，熟悉包发布、Git Flow、联调测试等开发、上线流程",
                 // "从逻辑优化的基础出发，
                 "将钱管家从原先 Vue2 框架重构为 React，并通过分层共享策略优化多端之间的代码复用率与可拓展性",
                 // 的 PC 和移动端 i 站**双端**一并
