@@ -85,28 +85,40 @@ const App: React.FC = () => {
           <ul>
             <li>
               长期使用和学习AI，了解大模型底层{" "}
-              <strong>神经网络RNN、Transformer</strong> 架构；了解infra基建层的{" "}
-              <strong>RAG、Skill、MCP</strong> 等；同时长期维护{" "}
+              <strong>神经网络RNN、Transformer</strong> 架构；了解 infra 层的{" "}
+              <strong>RAG、Skill、MCP</strong> 等；同时维护{" "}
               <a href="https://github.com/ceilf6/FrontAgent" target="_blank">
                 <strong>前端智能体</strong>
               </a>{" "}
-              等多个开源项目
+              等多个开源项目和{" "}
+              <a
+                href="https://huggingface.co/ceilf6/frontagent-planner-7B-lora"
+                target="_blank"
+              >
+                <strong>蒸馏模型</strong>
+              </a>
+            </li>
+            <li>
+              通过不断探寻最佳范式，提高与 AI 合作的效率与质量，例如
+              Harness、SDD、Wiki 等智能体工程化实践
             </li>
             <li>
               熟练使用 <strong>HTML5</strong> {/* className="text-[1.05em]" */}
-              进行语义化开发
-            </li>
-            <li>
-              熟悉 <strong>CSS</strong> 样式设置,
-              对视觉格式化模型、块级格式化上下文理解, 熟练异常样式排查
+              进行语义化开发；熟悉 <strong>CSS</strong>{" "}
+              样式设置，理解视觉格式化模型、块级格式化上下文
             </li>
             <li>
               理解原型链、期约异步、作用域链、this 指向、闭包、垃圾回收等{" "}
-              <strong>JS</strong> 核心原理，此外了解 TS、C++、python 语言
+              <strong>JS</strong> 核心原理，此外了解 TS、C++、Python 语言
             </li>
             <li>
-              了解 <strong>浏览器</strong>{" "}
+              熟悉 <strong>浏览器</strong>{" "}
               组成、渲染流程、事件循环、缓存、离线存储、资源提示词
+            </li>
+            <li>
+              熟悉
+              AJAX、跨域、cookie、TCP、各版本HTTP、SSL、HTTPS、CSRF、XSS、DNS、WebSocket等{" "}
+              <strong>网络</strong> 知识
             </li>
             <li>
               了解模块化、包管理器、Less、打包优化等 <strong>工程化</strong>{" "}
@@ -119,12 +131,8 @@ const App: React.FC = () => {
             </li>
             <li>
               了解 <strong>React</strong>{" "}
-              的JSX、组件状态、HOC、Ref转发、上下文等基本概念，及其整体架构和渲染流程。有RN开发经验
-            </li>
-            <li>
-              了解
-              AJAX、跨域、cookie、TCP、各版本HTTP、SSL、HTTPS、CSRF、XSS、DNS、WebSocket等{" "}
-              <strong>网络</strong> 知识
+              的JSX、组件状态、HOC、Ref转发、上下文等基本概念，及其整体架构和渲染流程。有{" "}
+              <strong>RN</strong> 开发经验
             </li>
           </ul>
         </section>
