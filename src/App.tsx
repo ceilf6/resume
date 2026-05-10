@@ -140,7 +140,7 @@ const App: React.FC = () => {
               startMonth={9}
               endYear={2026}
               endMonth={1}
-              midContent="前端开发(实习)"
+              midContent="软件开发(实习)"
               // position="**前端开发实习生**"
               projectName="**钱管家、基建组件库**"
               techStack="**React、Vue2、HTML5、CSS3、JavaScript、TypeScript**"
@@ -161,7 +161,7 @@ const App: React.FC = () => {
               startMonth={6}
               endYear={2025}
               endMonth={9}
-              midContent="前端开发(实习)"
+              midContent="软件开发(实习)"
               // position="**Web架构实习生**"
               projectName="**XBuilder**"
               projectLink="https://github.com/ceilf6/Xbuilder"
