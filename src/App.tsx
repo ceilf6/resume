@@ -84,10 +84,11 @@ const App: React.FC = () => {
           {/* 专业技能列表 */}
           <ul>
             <li>
-              持续关注并实践<strong> AI 应用开发</strong>，了解大模型底层{" "}
-              {/* <strong> */}
+              持续关注并实践<strong> AI 应用开发</strong>，熟悉{" "}
+              <strong>RAG、Skills、MCP</strong>{" "}
+              等infra基建层概念；了解大模型底层 {/* <strong> */}
               神经网络RNN、Transformer {/* </strong>  */}
-              架构；熟悉 <strong>RAG、Skill、MCP</strong> 等基建；同时维护{" "}
+              架构；同时维护{" "}
               <a href="https://github.com/ceilf6/FrontAgent" target="_blank">
                 <strong>前端智能体</strong>
               </a>{" "}
@@ -96,8 +97,9 @@ const App: React.FC = () => {
                 href="https://huggingface.co/ceilf6/frontagent-planner-7B-lora"
                 target="_blank"
               >
-                <strong>Claude 蒸馏了 Qwen 进行 SFT 的 LoRA 模型</strong>
-              </a>
+                Claude 蒸馏了 Qwen 进行 SFT 的 LoRA
+              </a>{" "}
+              等模型
             </li>
             <li>
               通过不断探寻更优的<strong>研发范式</strong>，提高与 AI
