@@ -42,7 +42,7 @@ const App: React.FC = () => {
                 {/* <a href="mailto:3506456886@qq.com">3506456886@qq.com</a> */}
               </dd>
               <dt>求职方向:</dt>
-              <dd>AI应用+全栈开发</dd>
+              <dd>全栈开发+AI应用</dd>
               <dt>年龄:</dt>
               <dd>{calcAge(2005, 5, 13)}</dd>
               <dt>性别:</dt>
@@ -117,15 +117,6 @@ const App: React.FC = () => {
               <strong>TS、C++、Python</strong> 语言
             </li>
             <li>
-              熟悉 <strong>浏览器</strong>{" "}
-              组成、渲染流程、事件循环、缓存、离线存储、资源提示词
-            </li>
-            <li>
-              熟悉
-              AJAX、跨域、cookie、TCP、各版本HTTP、SSL、HTTPS、CSRF、XSS、DNS、WebSocket等{" "}
-              <strong>网络</strong> 知识
-            </li>
-            <li>
               熟悉 <strong>React</strong>{" "}
               的JSX、组件状态、HOC、Ref转发、上下文等基本概念，及其整体架构和渲染流程。有{" "}
               <strong>RN</strong> 开发经验
@@ -133,6 +124,15 @@ const App: React.FC = () => {
             <li>
               熟悉 <strong>Vue</strong>{" "}
               的模版、组件对象配置、通信、实例属性、路由插件、组合式API、响应化实现原理、Vuex
+            </li>
+            <li>
+              熟悉 <strong>浏览器</strong>{" "}
+              组成、渲染流程、事件循环、缓存、离线存储、资源提示词
+            </li>
+            <li>
+              熟悉
+              AJAX、跨域、cookie、TCP、各版本HTTP、SSL、HTTPS、CSRF、XSS、DNS、WebSocket等{" "}
+              <strong>网络</strong> 知识
             </li>
             <li>
               熟悉模块化、包管理器、Less、打包优化等 <strong>工程化</strong>{" "}
