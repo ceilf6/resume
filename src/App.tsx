@@ -148,14 +148,29 @@ const App: React.FC = () => {
         {/* 工作经历 */}
         <section className="experience">
           <SectionHeader title="工作经历" />
-          {/* 经历1: 美团 */}
+          {/* 经历1: 字节 */}
           <div>
             <ProjectItem
-              leftContent="(1) 美团"
+              leftContent="(1) 字节"
+              startYear={2026}
+              startMonth={6}
+              endYear={2026}
+              endMonth={7}
+              midContent="软件开发(实习)"
+              projectName=""
+              techStack=""
+              description=""
+              tasks={["", "", ""]}
+            />
+          </div>
+          {/* 经历2: 美团 */}
+          <div>
+            <ProjectItem
+              leftContent="(2) 美团"
               startYear={2025}
               startMonth={9}
               endYear={2026}
-              endMonth={5}
+              endMonth={6}
               midContent="软件开发(实习)"
               // position="**前端开发实习生**"
               projectName="**美团APP到店页面、“钱管家”等多个内部平台、基建组件库**"
@@ -174,10 +189,10 @@ const App: React.FC = () => {
               ]}
             />
           </div>
-          {/* 经历2: 七牛 */}
-          <div>
+          {/* 经历3: 七牛 */}
+          {/* <div>
             <ProjectItem
-              leftContent="(2) 七牛云"
+              leftContent="(3) 七牛云"
               startYear={2025}
               startMonth={6}
               endYear={2025}
@@ -196,7 +211,7 @@ const App: React.FC = () => {
                 // "架构和编写了截屏分享和录屏分享组件，通过模态框统一管理组件状态，优化了父子组件通信",
               ]}
             />
-          </div>
+          </div> */}
         </section>
 
         {/* 荣誉获奖 */}
