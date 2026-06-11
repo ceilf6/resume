@@ -157,10 +157,10 @@ const App: React.FC = () => {
               endYear={2026}
               endMonth={7}
               midContent="软件开发(实习)"
-              projectName=""
-              techStack=""
-              description=""
-              tasks={["", "", ""]}
+              projectName="占位"
+              techStack="占位"
+              description="占位"
+              tasks={["占位", "占位", "占位"]}
             />
           </div>
           {/* 经历2: 美团 */}
