@@ -150,10 +150,10 @@ const App: React.FC = () => {
         {/* 工作经历 */}
         <section className="experience">
           <SectionHeader title="工作经历" />
-          {/* 经历1: 字节 */}
+          {/* 经历1: 字节跳动 */}
           <div>
             <ProjectItem
-              leftContent="(1) 字节"
+              leftContent="(1) 字节跳动"
               startYear={2026}
               startMonth={6}
               endYear={2026}
