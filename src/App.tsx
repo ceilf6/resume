@@ -94,54 +94,56 @@ const App: React.FC = () => {
               </a>{" "}
               等多个开源项目以及{" "}
               <a
-                href="https://huggingface.co/ceilf6/frontagent-planner-7B-lora"
+                // href="https://huggingface.co/collections/ceilf6/frontagent-frontend-engineering-agent"
+                href="https://huggingface.co/ceilf6"
                 target="_blank"
               >
-                Claude 蒸馏了 Qwen 进行 SFT 的 LoRA
+                {/* Claude 蒸馏了 Qwen 进行 SFT 的 LoRA */}
+                前端侧 LoRA
               </a>{" "}
               等模型
             </li>
             <li>
               通过不断探寻更优的<strong>研发范式</strong>，提高与 AI
-              合作的效率与质量，例如 <strong>Harness、SDD、Wiki</strong>{" "}
-              等智能体工程化实践
+              合作的效率与质量，例如 <strong>Harness、SDD、TDD、Wiki</strong>{" "}
+              等工程化实践
             </li>
-            <li>
-              熟练使用 <strong>HTML5</strong> {/* className="text-[1.05em]" */}
+            {/* <li>
+              熟练使用 <strong>HTML5</strong>
               进行语义化开发；熟悉 <strong>CSS</strong>{" "}
               样式设置，理解视觉格式化模型、块级格式化上下文
-            </li>
+            </li> */}
             <li>
               理解原型链、期约异步、作用域链、this 指向、闭包、垃圾回收等{" "}
               <strong>JS</strong> 核心原理，此外熟悉{" "}
               <strong>TS、C++、Python</strong> 语言
             </li>
-            <li>
+            {/* <li>
               熟悉 <strong>React</strong>{" "}
               的JSX、组件状态、HOC、Ref转发、上下文等基本概念，及其整体架构和渲染流程。有{" "}
               <strong>RN</strong> 开发经验
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               熟悉 <strong>Vue</strong>{" "}
               的模版、组件对象配置、通信、实例属性、路由插件、组合式API、响应化实现原理、Vuex
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               熟悉 <strong>浏览器</strong>{" "}
               组成、渲染流程、事件循环、缓存、离线存储、资源提示词
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               熟悉
               AJAX、跨域、cookie、TCP、各版本HTTP、SSL、HTTPS、CSRF、XSS、DNS、WebSocket等{" "}
               <strong>网络</strong> 知识
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               熟悉模块化、包管理器、Less、打包优化等 <strong>工程化</strong>{" "}
               开发
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               了解后端 <strong>NodeJS</strong>{" "}
               的生命周期以及Net、HTTP、文件等模块
-            </li>
+            </li> */}
           </ul>
         </section>
 
@@ -190,7 +192,7 @@ const App: React.FC = () => {
             />
           </div>
           {/* 经历3: 七牛 */}
-          {/* <div>
+          <div>
             <ProjectItem
               leftContent="(3) 七牛云"
               startYear={2025}
@@ -201,17 +203,17 @@ const App: React.FC = () => {
               // position="**Web架构实习生**"
               projectName="**XBuilder**"
               projectLink="https://github.com/ceilf6/Xbuilder"
-              techStack="**Vue3、HTML5、CSS3、JavaScript、TypeScript、XGO、Vite、npm、Git、Vercel**"
+              techStack="**Vue3、HTML5、CSS3、JavaScript、TypeScript、XGO、Vite、npm、Vercel**"
               description="通过构建 XBuilder 平台的分享机制，提高平台的传播度，宣传游戏编译器和 XGO 语言"
               tasks={[
                 // "负责模块设计与接口设计，实现代码的低耦合与强健",
-                "架构和编写了海报组件，实现项目信息与渲染 DOM 节点的统一管理",
-                "通过录屏组件打通页面视频从站内文件到第三方的链路",
+                "架构和编写了海报、录屏组件，实现项目信息与渲染 DOM 节点的统一管理，打通与第三方平台的链路",
+                // "通过录屏组件打通页面视频从站内文件到第三方的链路",
                 // 通过组件反向暴露方法实现嵌入截屏
                 // "架构和编写了截屏分享和录屏分享组件，通过模态框统一管理组件状态，优化了父子组件通信",
               ]}
             />
-          </div> */}
+          </div>
         </section>
 
         {/* 荣誉获奖 */}
@@ -235,7 +237,7 @@ const App: React.FC = () => {
             <li>
               码蹄杯程序设计大赛<strong>金奖</strong>
             </li>
-            <li>美国数学建模大赛H奖</li>
+            {/* <li>美国数学建模大赛H奖</li> */}
             <li>CSP证书</li>
             <li>
               从0到1<strong>国家级项目</strong>负责人
@@ -243,11 +245,11 @@ const App: React.FC = () => {
             <li>
               上海大学<strong>优秀学生</strong>
             </li>
-            <li>
+            {/* <li>
               上海大学<strong>科创奖学金</strong>
-            </li>
-            <li>学院四佳学生</li>
-            <li>最受欢迎学习委员</li>
+            </li> */}
+            {/* <li>学院四佳学生</li> */}
+            {/* <li>最受欢迎学习委员</li> */}
             <li>英语、法语都支持工作交流</li>
           </ul>
         </section>
